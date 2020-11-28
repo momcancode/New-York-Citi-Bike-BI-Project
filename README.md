@@ -1,4 +1,4 @@
-# New York Citi Bike Program Analytics - BI Project with Tableau
+# New York Citi Bike Program Analytics - Tableau Project
 
 ## Demo
 
