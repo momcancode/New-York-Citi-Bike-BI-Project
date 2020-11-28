@@ -1,6 +1,8 @@
-# New York City Citi Bike Analytics - BI Project with Tableau
+# New York Citi Bike Program Analytics - BI Project with Tableau
 
 ## Demo
+
+Interact with the visualisations [here](https://tabsoft.co/3o2oxnt).
 
 ![Demo](images/demo.gif)
 
