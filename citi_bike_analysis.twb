@@ -459,14 +459,6 @@
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
       <style>
         <style-rule element='mark'>
-          <encoding attr='color' field='[none:usertype:nk]' type='palette'>
-            <map to='#2a5783'>
-              <bucket>&quot;Subscriber&quot;</bucket>
-            </map>
-            <map to='#92c0df'>
-              <bucket>&quot;Customer&quot;</bucket>
-            </map>
-          </encoding>
           <encoding attr='color' field='[:Measure Names]' type='palette'>
             <map to='#b9ddf1'>
               <bucket>&quot;[federated.046s4h6079bg1z1fyjztk1619z93].[avg:tripduration:qk]&quot;</bucket>
@@ -491,6 +483,14 @@
             </map>
             <map to='#e15759'>
               <bucket>&quot;[federated.046s4h6079bg1z1fyjztk1619z93].[sum:Calculation_161285211273768960:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:usertype:nk]' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Subscriber&quot;</bucket>
+            </map>
+            <map to='#92c0df'>
+              <bucket>&quot;Customer&quot;</bucket>
             </map>
           </encoding>
           <encoding attr='color' field='[none:gender:nk]' type='palette'>
@@ -1971,8 +1971,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='25' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='24' param='vert' w='84000' x='8000' y='8000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='27' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='26' param='vert' w='84000' x='8000' y='8000'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9000' id='6' w='76600' x='800' y='1000'>
                   <formatted-text>
                     <run fontname='Tableau Bold' fontsize='15'>Which BikeID most likely due for repair or inspection?</run>
@@ -2054,13 +2054,6 @@
                           </formatted-text>
                         </zone>
                       </dashboard>
-                      <worksheet name='TripsOverQuarters'>
-                        <highlight field='[federated.046s4h6079bg1z1fyjztk1619z93].[:Measure Names]'>
-                          <bucket-selection>
-                            <bucket>&quot;[federated.046s4h6079bg1z1fyjztk1619z93].[sum:Calculation_161285211273768960:qk]&quot;</bucket>
-                          </bucket-selection>
-                        </highlight>
-                      </worksheet>
                     </capturedDeltas>
                   </story-point>
                   <story-point caption='Men use the service much more than women. Women commuters usually wear more sophisticated outfit than men. This could make riding a bike more dificult.&#10;The average trip durations between female and male participants are, however, quite similar.' captured-sheet='Gender' id='4'>
@@ -2072,7 +2065,7 @@
                             <field>[federated.046s4h6079bg1z1fyjztk1619z93].[yr:starttime:ok]</field>
                           </color-one-way>
                           <bucket-selection>
-                            <bucket>&quot;Male&quot;</bucket>
+                            <bucket>&quot;Female&quot;</bucket>
                           </bucket-selection>
                         </highlight>
                       </worksheet>
@@ -2086,7 +2079,7 @@
                             <field>[federated.046s4h6079bg1z1fyjztk1619z93].[yr:starttime:ok]</field>
                           </color-one-way>
                           <bucket-selection>
-                            <bucket>&quot;Subscriber&quot;</bucket>
+                            <bucket>&quot;Customer&quot;</bucket>
                           </bucket-selection>
                         </highlight>
                       </worksheet>
@@ -2101,7 +2094,7 @@
                             <field>[federated.046s4h6079bg1z1fyjztk1619z93].[yr:starttime:ok]</field>
                           </color-one-way>
                           <bucket-selection>
-                            <bucket>&quot;Age Group 45 - 55&quot;</bucket>
+                            <bucket>&quot;Age Group 55+&quot;</bucket>
                           </bucket-selection>
                         </highlight>
                       </worksheet>
@@ -2201,8 +2194,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1350' minheight='1350' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='41' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='40' param='vert' w='84000' x='8000' y='8000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='43' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='42' param='vert' w='84000' x='8000' y='8000'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='4169' id='16' w='91840' x='800' y='1000'>
                   <formatted-text>
                     <run fontname='Tableau Bold' fontsize='14'>Top and Bottom 10 Stations by Number of Trips for Starting and Ending a journey in October 2020</run>
@@ -2373,8 +2366,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='58' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='57' param='vert' w='84000' x='8000' y='8000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='60' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='59' param='vert' w='84000' x='8000' y='8000'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='4000' id='16' w='91985' x='800' y='1000'>
                   <formatted-text>
                     <run fontname='Tableau Bold' fontsize='14'>Overview of change in number of trips in start and end stations from January 2018 to October 2020</run>
@@ -2524,8 +2517,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='38' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='37' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='40' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='39' param='vert' w='84000' x='8000' y='8000'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='4169' id='10' w='91327' x='800' y='1000'>
                   <formatted-text>
                     <run fontname='Tableau Bold' fontsize='15'>How has Number of Trips and Average Trip Duration changed over time?</run>
@@ -2591,7 +2584,7 @@
   <windows source-height='30'>
     <window class='dashboard' maximized='true' name='NYCitiBike'>
       <viewpoints />
-      <active id='-1' />
+      <active id='4' />
       <simple-id uuid='{9ABDA09F-0409-4457-A7D3-C6F581527C0D}' />
     </window>
     <window class='dashboard' name='StationOverview'>
